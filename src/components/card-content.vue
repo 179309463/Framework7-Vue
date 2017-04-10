@@ -1,6 +1,6 @@
 <template>
   <div class="card-content">
-    <div class="card-content-inner" v-if="inner">
+    <div class="card-content-inner" v-if="inner==true">
       <slot></slot>
     </div>
     <slot v-else></slot>
