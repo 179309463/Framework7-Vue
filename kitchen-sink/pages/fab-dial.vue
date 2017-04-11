@@ -4,13 +4,19 @@
 
     <f7-fab-speed-dial>
       <f7-fab-actions>
-        <f7-fab-action color="pink" @click="onActionClick">A</f7-fab-action>
-        <f7-fab-action color="orange" @click="onActionClick">B</f7-fab-action>
-        <f7-fab-action color="green" @click="onActionClick">C</f7-fab-action>
+        <f7-fab-action color="pink" @click="onActionClick">
+          <f7-icon icon="f7-icons" style="font-size: 20px">email</f7-icon>
+        </f7-fab-action>
+        <f7-fab-action color="orange" @click="onActionClick">
+          <f7-icon icon="f7-icons" style="font-size: 20px">today</f7-icon>
+        </f7-fab-action>
+        <f7-fab-action color="green" @click="onActionClick">
+          <f7-icon icon="f7-icons" style="font-size: 20px">download</f7-icon>
+        </f7-fab-action>
       </f7-fab-actions>
       <f7-fab>
-        <f7-icon icon="icon-plus"></f7-icon>
-        <f7-icon icon="icon-close"></f7-icon>
+        <f7-icon icon="f7-icons">add</f7-icon>
+        <f7-icon icon="f7-icons">close</f7-icon>
       </f7-fab>
     </f7-fab-speed-dial>
 

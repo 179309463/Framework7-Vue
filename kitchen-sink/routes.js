@@ -2,11 +2,14 @@
 import ContentBlock from './pages/content-block.vue';
 import Cards from './pages/cards.vue';
 import Lists from './pages/lists.vue';
+import MediaLists from './pages/media-lists.vue';
 import Contacts from './pages/contacts.vue';
 import Sortable from './pages/sortable.vue';
 import Swipeout from './pages/swipeout.vue';
 import Accordion from './pages/accordion.vue';
 import Grid from './pages/grid.vue';
+import LazyLoadImages from './pages/lazy-load-images.vue';
+import Icons from './pages/icons.vue';
 import Forms from './pages/forms.vue';
 import SmartSelect from './pages/smart-select.vue';
 import Chips from './pages/chips.vue';
@@ -65,6 +68,10 @@ export default [
     component: Lists
   },
   {
+    path: '/media-lists/',
+    component: MediaLists
+  },
+  {
     path: '/contacts/',
     component: Contacts
   },
@@ -83,6 +90,14 @@ export default [
   {
     path: '/grid/',
     component: Grid
+  },
+  {
+    path: '/lazy-load-images/',
+    component: LazyLoadImages
+  },
+  {
+    path: '/icons/',
+    component: Icons
   },
   {
     path: '/forms/',

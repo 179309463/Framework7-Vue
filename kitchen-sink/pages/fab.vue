@@ -3,7 +3,7 @@
     <f7-navbar back-link="Back" title="Floating Action Button" sliding></f7-navbar>
 
     <f7-fab color="pink">
-      <f7-icon icon="icon-plus"></f7-icon>
+      <f7-icon icon="f7-icons">add</f7-icon>
     </f7-fab>
     <f7-block>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis autem necessitatibus, commodi nostrum ad, quod laudantium magnam facilis sed explicabo maiores aliquam, iure ipsam totam. Cum rerum facilis, eveniet temporibus.</p>

@@ -7,6 +7,8 @@
 
   <link rel="stylesheet" href="framework7/framework7.ios.min.css">
   <link rel="stylesheet" href="framework7/framework7.ios.colors.min.css">
+  <!--link rel="stylesheet" href="framework7/framework7.material.min.css">
+  <link rel="stylesheet" href="framework7/framework7.material.colors.min.css"-->
   <link rel="stylesheet" href="framework7/framework7-icons.css">
 </head>
 <body>
@@ -19,8 +21,8 @@
           <f7-page>
             <f7-navbar title="Left Panel"></f7-navbar>
             <f7-list>
-              <f7-list-item link="/cards/" title="Cards"></f7-list-item>
-              <f7-list-item link="/lists/" title="Lists"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" link="/cards/" title="Cards"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" link="/lists/" title="Lists"></f7-list-item>
             </f7-list>
           </f7-page>
         </f7-pages>
@@ -41,63 +43,63 @@
           </f7-nav-right>
         </f7-navbar>
         <f7-pages>
-          <f7-page toolbar-fixed>
+          <f7-page ><!--toolbar-fixed-->
             <f7-navbar v-if="$theme.material">
               <f7-nav-left>
                 <f7-link icon="icon-bars" open-panel="left"></f7-link>
               </f7-nav-left>
-              <f7-nav-center sliding>Hello World</f7-nav-center>
+              <f7-nav-center sliding>Hello World2</f7-nav-center>
               <f7-nav-right>
                 <f7-link icon="icon-bars" open-panel="right"></f7-link>
               </f7-nav-right>
             </f7-navbar>
-            <f7-toolbar>
+            <!--f7-toolbar>
               <f7-link>Left</f7-link>
               <f7-link>Right</f7-link>
-            </f7-toolbar>
+            </f7-toolbar-->
 
             <f7-list>
-              <f7-list-item title="Accordion" link="/accordion/"></f7-list-item>
-              <f7-list-item title="Calendar" link="/calendar/"></f7-list-item>
-              <f7-list-item title="Cards" link="/cards/"></f7-list-item>
-              <f7-list-item title="Chips" link="/chips/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="手风琴折叠" link="/accordion/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="日历" link="/calendar/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="卡片" link="/cards/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="标签" link="/chips/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="联系人" link="/contacts/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="浮动按钮" link="/fab/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="浮动按钮菜单" link="/fab-dial/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="表单" link="/forms/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="选择" link="/smart-select/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="栅格" link="/grid/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="图标" link="/icons/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="无尽滚动" link="/infinite/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="图片加载" link="/lazy-load-images/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="列表" link="/lists/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="登陆" link="/login-screen/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="图文列表" link="/media-lists/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="聊天" link="/messages/"></f7-list-item>
 
-              <f7-list-item title="Content Block" link="/content-block/"></f7-list-item>
-              
-              <f7-list-item title="Lists" link="/lists/"></f7-list-item>
-              <f7-list-item title="Contacts" link="/contacts/"></f7-list-item>
-              <f7-list-item title="Sortable" link="/sortable/"></f7-list-item>
-              <f7-list-item title="Swipeout" link="/swipeout/"></f7-list-item>
-              
-              <f7-list-item title="Forms" link="/forms/"></f7-list-item>
-              <f7-list-item title="Smart Select" link="/smart-select/"></f7-list-item>
-              
-              <f7-list-item title="Grid" link="/grid/"></f7-list-item>
-              <f7-list-item title="Preloader" link="/preloader/"></f7-list-item>
-              <f7-list-item title="Progress Bar" link="/progressbar/"></f7-list-item>
-              <f7-list-item title="Pull To Refresh" link="/pull-to-refresh/"></f7-list-item>
-              <f7-list-item title="Infinite Scroll" link="/infinite/"></f7-list-item>
-              <f7-list-item title="Swiper" link="/swiper/"></f7-list-item>
-              <f7-list-item title="Messages" link="/messages/"></f7-list-item>
-              <f7-list-item title="Searchbar" link="/searchbar/"></f7-list-item>
-              <f7-list-item title="Tabs" link="/tabs/"></f7-list-item>
-              <f7-list-item title="Tabs Swipeable" link="/tabs-swipeable/"></f7-list-item>
-              <f7-list-item title="Navbars & Toolbars" link="/bars/"></f7-list-item>
-              <f7-list-item title="FAB" link="/fab/"></f7-list-item>
-              <f7-list-item title="FAB Speed Dial" link="/fab-dial/"></f7-list-item>
-              <f7-list-item title="Login Screen" link="/login-screen/"></f7-list-item>
-              <f7-list-item title="Virtual List" link="/virtual-list/"></f7-list-item>
-              <f7-list-item title="Photo Browser" link="/photo-browser/"></f7-list-item>
-              <f7-list-item title="Modals" link="/modals/"></f7-list-item>
-              <f7-list-item title="Timeline Vertical" link="/timeline-vertical/"></f7-list-item>
-              <f7-list-item title="Timeline Horizontal" link="/timeline-horizontal/"></f7-list-item>
-              <f7-list-item title="Timeline Calendar" link="/timeline-calendar/"></f7-list-item>
-              
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="弹窗" link="/modals/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="导航栏 & 工具栏" link="/bars/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="图片浏览" link="/photo-browser/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="加载提示" link="/preloader/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="进度条" link="/progressbar/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="下拉刷新" link="/pull-to-refresh/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="搜索栏" link="/searchbar/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="排序" link="/sortable/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="滑动删除" link="/swipeout/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="滑动手势" link="/swiper/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="标签页" link="/tabs/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="可滑动标签页" link="/tabs-swipeable/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="垂直时间轴" link="/timeline-vertical/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="水平时间轴" link="/timeline-horizontal/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="日历时间轴" link="/timeline-calendar/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="虚拟列表" link="/virtual-list/"></f7-list-item>
+
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="内容块" link="/content-block/"></f7-list-item>
             </f7-list>
             <f7-list>
-              <f7-list-item title="Dynamic Route" link="/user/45/posts/28/?sort=first#opened"></f7-list-item>
-              <f7-list-item title="Nested Routes" link="/nested-routes/"></f7-list-item>
-              <f7-list-item title="Data Binding" link="/data-binding/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="动态路由" link="/user/45/posts/28/?sort=first#opened"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="嵌套路由" link="/nested-routes/"></f7-list-item>
+              <f7-list-item media="<i class='icon icon-f7'></i>" title="数据绑定" link="/data-binding/"></f7-list-item>
             </f7-list>
           </f7-page>
         </f7-pages>

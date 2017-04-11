@@ -4,7 +4,7 @@
     <f7-list form>
       <f7-list-item>
         <f7-label>Username</f7-label>
-        <f7-input name="username" placeholder="Username"></f7-input>
+        <f7-input name="username" type="text" placeholder="Username"></f7-input>
       </f7-list-item>
       <f7-list-item>
         <f7-label>Password</f7-label>
